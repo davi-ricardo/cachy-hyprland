@@ -1,4 +1,3 @@
-cat << 'EOF' > ~/dotfiles/README.md
 # 🏔️ CachyOS Hyprland Rice
 
 Um setup limpo, produtivo e altamente customizado rodando **Hyprland** no **CachyOS** (Arch Linux).
@@ -27,3 +26,10 @@ Um setup limpo, produtivo e altamente customizado rodando **Hyprland** no **Cach
 Em sistemas com GPUs como a Intel Iris Xe, o gerenciamento de energia da tela (`DPMS off`) pode fazer com que interfaces Wayland como o **Noctalia** percam a sincronização de renderização ao acordar o monitor.
 
 Este repositório inclui um mecanismo de autorecovery integrado no `hypridle.conf` que força o redesenho da interface via `on-resume`:
+
+```ini
+listener {
+    timeout = 660 # 11 minutos
+    on-timeout = hyprctl dispatch dpms off
+    on-resume = hyprctl dispatch dpms on && (noctalia-cli reload || nohup noctalia >/dev/null 2>&1 &)
+}

@@ -1,0 +1,5 @@
+*.log
+*.socket
+cache/
+history
+noctalia/plugins/sources/*/repo/

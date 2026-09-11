@@ -1,0 +1,172 @@
+config_version = 14
+
+[bar.default]
+background_opacity = 0.0
+capsule = true
+capsule_border = "outline"
+capsule_opacity = 0.89999997988343239
+capsule_padding = 8.0
+capsule_radius = 80
+margin_edge = 3
+margin_ends = 28
+padding = 12
+start = [ "launcher", "workspaces" ]
+thickness = 38
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000006", "desktop-widget-0000000000000005", "desktop-widget-0000000000000008" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000005]
+    box_height = 347.9296875
+    box_width = 366.96484375
+    cx = 1716.98828125
+    cy = 886.08203125
+    output = "HDMI-A-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "calendar"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
+        background = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000006]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 106.484375
+    cy = 1011.640625
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "sysmon"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
+        background = false
+        display = "graph"
+        gauge_layout = "horizontal"
+        shadow = false
+        stat = "ram_pct"
+        stat2 = "cpu_usage"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000008]
+    box_height = 134.67578125
+    box_width = 201.03515625
+    cx = 960.0
+    cy = 540.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000008.settings]
+        background = false
+
+[dock]
+auto_hide = true
+background_opacity = 0.52999998815357685
+enabled = true
+icon_size = 40
+main_axis_padding = 12
+margin_edge = 10
+pinned = [ "org.gnome.Nautilus", "kitty", "google-chrome", "code", "trae" ]
+radius = 24
+reserve_space = false
+show_dots = true
+show_instance_count = false
+
+[lockscreen_widgets]
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[shell.panel]
+transparency_mode = "glass"
+
+[theme]
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+[wallpaper.default]
+path = "/home/davi/Imagens/rahul-lal-xRGnbxvM-lo-unsplash.jpg"
+
+[wallpaper.last]
+path = "/home/davi/Imagens/rahul-lal-xRGnbxvM-lo-unsplash.jpg"
+
+[wallpaper.monitors.HDMI-A-2]
+path = "/home/davi/Imagens/rahul-lal-xRGnbxvM-lo-unsplash.jpg"
+
+[wallpaper.monitors.eDP-1]
+path = "/home/davi/Imagens/rahul-lal-xRGnbxvM-lo-unsplash.jpg"
+
+[widget.bluetooth]
+enabled = false
+
+[widget.control-center]
+enabled = false
